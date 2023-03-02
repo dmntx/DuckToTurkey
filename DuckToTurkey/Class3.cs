@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace DuckToTurkey
 {
-    class Class3
+    class Turkey
     {
+
+        private readonly IGraznar gluglu;
+        private readonly IVolar fly;
+        protected Turkey(IGraznar gluglu, IVolar fly)
+        {
+            this.gluglu = gluglu;
+            this.fly = fly;
+        }
+
     }
 }
